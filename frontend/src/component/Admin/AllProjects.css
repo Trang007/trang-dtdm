@@ -1,0 +1,93 @@
+.listContainer {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  border-left: 1px solid rgba(0, 0, 0, 0.158);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.MuiDataGrid-columnHeader {
+  background-image: linear-gradient(rgb(84, 180, 235), rgb(47, 164, 231) 60%, rgb(29, 156, 229));
+}
+
+#listHeading {
+  font: 400 2rem "Roboto";
+  padding: 0.5vmax;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.637);
+  transition: all 0.5s;
+  margin: 2rem;
+  text-align: center;
+}
+
+.listFormHeading {
+  font: 400 2rem "Roboto";
+  padding: 0.5vmax;
+  box-sizing: border-box;
+  transition: all 0.5s;
+  margin: 2rem;
+  text-align: center;
+}
+
+.listTable {
+  background-color: white;
+  border: none !important;
+}
+
+.listTable div {
+  font: 300 1vmax "Roboto";
+  color: rgba(0, 0, 0, 0.678);
+  border: none !important;
+}
+
+.listTable a,
+.listTable button {
+  color: rgba(0, 0, 0, 0.527);
+  transition: all 0.5s;
+}
+
+.listTable a:hover {
+  color: tomato;
+}
+
+.listTable button:hover {
+  color: rgb(236, 30, 30);
+}
+
+.MuiDataGrid-columnHeader div {
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 600px) {
+  .listTable div {
+    font: 300 4vw "Roboto";
+  }
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.icon a {
+  padding: 8px 20px;
+  padding-right: 0;
+}
+
+.newLink {
+  position: fixed;
+  z-index: 2;
+  bottom: 5vw;
+  right: 5vw;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: linear-gradient(rgb(84, 180, 235), rgb(47, 164, 231) 60%, rgb(29, 156, 229));
+  font-size: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
